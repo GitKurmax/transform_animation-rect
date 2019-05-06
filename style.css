@@ -1,0 +1,94 @@
+html, body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.outer {
+  width: 200px;
+  height: 200px;
+  background: blue;
+  position: relative;
+}
+
+.inner {
+  color: #fff;
+  background: green;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 50%;
+  position: absolute;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+.cross {
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes moveCircle {
+  from {
+    transform: translateX(0);
+  }
+   
+  to {
+    transform: translateX(200px);
+  }
+}
+
+@keyframes moveCircle2 {
+  from {
+    transform: translateY(0);
+  }
+   
+  to {
+    transform: translateY(200px);
+  }
+}
+
+@keyframes moveCircle3 {
+  from {
+    transform: translateX(200px);
+  }
+   
+  to {
+    transform: translate(0);
+  }
+}
+
+@keyframes moveCircle4 {
+  from {
+    transform: translateY(0);
+  }
+   
+  to {
+    transform: translateY(-200px);
+  }
+}
+
+
+@keyframes rotate2 {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(90deg);
+  }
+}
